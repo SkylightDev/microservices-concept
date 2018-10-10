@@ -2,7 +2,7 @@
 Microservices proof of concept
 
 
-##Instructions
+## Instructions
 1. git clone https://github.com/SkylightDev/microservices-concept.git
 2. intall NodeJS and NPM
 Version used for these microservices:
@@ -20,11 +20,11 @@ npm install pm2 -g
 ```
 4.
 
-##Scalability
+## Scalability
 All microservices are scaled accross all CPUs available, without any code modifications using the node.js cluster module.
 Processes can be managed and monitored using PM2 (http://pm2.keymetrics.io)
 
-##Technologies used
+## Technologies used
 - Node.js
 - Express - Minimal and flexible Node.js web application framework (https://expressjs.com)
 - PM2 - Advanced, production process manager for Node.js (http://pm2.keymetrics.io)
