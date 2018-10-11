@@ -42,6 +42,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
+app.use('/apidoc', express.static(__dirname + '/apidoc'));
 
 app.get('/favicon.ico', (req, res) => res.status(204));
 

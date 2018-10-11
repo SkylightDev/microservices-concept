@@ -6,7 +6,24 @@ var Request = require("request");
 
 var crypto = require('crypto');
 
-/* GET users listing. */
+/**
+* @api {get} /users/ List All Users
+* @apiVersion 1.0.0
+* @apiName /*
+* @apiGroup Users
+*
+@apiExample {cUrl} Example usage:
+* curl -i http://localhost:3000/users/
+*
+* @apiSuccess (Success 200) {JSON} users Object
+*
+* @apiSuccessExample {json} Success response:
+*     HTTP/1.1 200 OK
+*     [{"_id":"1","firstName":"Natasha","lastName":"Kerensky","country":"Outreach","nickname":"Black Widow","email":"natasha@test.com"},
+*      {"_id":"2","firstName":"Takashi","lastName":"Kurita","country":"Draconis","nickname":"Kurita","email":"kurita@test.com"},
+*      {"_id":"3","firstName":"Jamie","lastName":"Wolf","country":"Inner Sphere","nickname":"Dragoon","email":"wolf@test.com"}]
+*
+*/
 router.get('/', function(req, res, next) {
     var result;
     mongo.collection('users').find(null, {_id:1, firstName:1, lastName:1, country:1, nickname:1, email: 1}).toArray(function(err,users){

@@ -36,7 +36,13 @@ npm install pm2 -g
 - Service node-competition should be accessible on
 `http://localhost:3002`
 
-7. self-documented endpoints are accessible on:
+7. self-documented endpoints are accessible on each microservice on endpoint /apidoc e.g.:
+- Doc for node-users:
+`http://localhost:3000/apidoc`
+- Doc for node-search:
+`http://localhost:3001/apidoc`
+- Doc for node-competition:
+`http://localhost:3002`
 
 8. To stop the services run
 - `pm2 stop node-users`
@@ -54,6 +60,7 @@ npm install pm2 -g
 When deploying the application with PM2, we can take advantage of clustering without modifying the application code.
 - The /health endpoint will act as healthcheck
 - The application is using winston module to log all the debug/info/error messages in logs/app.log folder as well as printing them in the console.
+- Documentation created with apiDoc module
 - Using body-parser and express-validator to filter malicious input.
 - Using Request module to be able to notify the other microservices when a user has been added or modified.
 - These microservices do not implement any authentication. Ideally, any Rest Service microservice should also implement authentication, e.g. token based authentication (OAuth)
@@ -83,6 +90,7 @@ pm2 scale app 2
 - Node.js
 - Express - Minimal and flexible Node.js web application framework (https://expressjs.com)
 - PM2 - Advanced, production process manager for Node.js (http://pm2.keymetrics.io)
+- apiDoc - Self-documented Endpoints
 
 - Mongomock - mongoDb-native mocking library (https://www.npmjs.com/package/mongomock)
 
