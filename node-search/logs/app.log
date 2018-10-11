@@ -1,0 +1,9 @@
+{"message":"Service node-search notified that a new user was created","level":"info","timestamp":"2018-10-11T19:10:48.178Z"}
+{"nickname":"test123","firstName":"testtt","lastName":"test","country":"TEst","email":"test@test.com","level":"info","message":"","timestamp":"2018-10-11T19:10:48.181Z"}
+{"level":"info","message":"\u001b[0mPOST /notify/newUser \u001b[32m200 \u001b[0m45.173 ms - 183\u001b[0m\n","timestamp":"2018-10-11T19:10:48.191Z"}
+{"message":"Service node-search notified that a new user was created","level":"info","timestamp":"2018-10-11T19:22:32.726Z"}
+{"nickname":"test123","firstName":"testtt","lastName":"test","country":"TEst","email":"test@test.com","level":"info","message":"","timestamp":"2018-10-11T19:22:32.729Z"}
+{"level":"info","message":"\u001b[0mPOST /notify/newUser \u001b[32m200 \u001b[0m35.761 ms - 183\u001b[0m\n","timestamp":"2018-10-11T19:22:32.739Z"}
+{"message":"Service node-search notified that a new user was created","level":"info","timestamp":"2018-10-11T19:22:43.031Z"}
+{"nickname":"test123","firstName":"testtt","lastName":"test","country":"TEst","email":"test@test.com","level":"info","message":"","timestamp":"2018-10-11T19:22:43.034Z"}
+{"level":"info","message":"\u001b[0mPOST /notify/newUser \u001b[32m200 \u001b[0m26.446 ms - 183\u001b[0m\n","timestamp":"2018-10-11T19:22:43.041Z"}

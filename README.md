@@ -24,9 +24,9 @@ npm install pm2 -g
 - node-competition
 
 5. run each service with pm2
-- `pm2 start node-users/bin/www --name node-users`
-- `pm2 start node-search/bin/www --name node-search`
-- `pm2 start node-competition/bin/www --name node-competition`
+- `pm2 start node-users/bin/www --name node-users -i max`
+- `pm2 start node-search/bin/www --name node-search -i max`
+- `pm2 start node-competition/bin/www --name node-competition -i max`
 
 6.
 - Service node-users should be accessible on
@@ -50,6 +50,9 @@ npm install pm2 -g
 
 
 ## Development decisions
+- Will use PM2 to make use of node clustering scalability and also for the application high availability.
+When deploying the application with PM2, we can take advantage of clustering without modifying the application code.
+- The /health endpoint will act as healthcheck
 - The application is using winston module to log all the debug/info/error messages in logs/app.log folder as well as printing them in the console.
 - Using body-parser and express-validator to filter malicious input.
 - Using Request module to be able to notify the other microservices when a user has been added or modified.
@@ -59,6 +62,22 @@ npm install pm2 -g
 ## Scalability
 All microservices are scaled accross all CPUs available, without any code modifications using the node.js cluster module.
 Processes can be managed and monitored using PM2 (http://pm2.keymetrics.io)
+
+To enable cluster mode, start your application like so:
+```
+#Start 4 worker processes
+pm2 start app.js -i 4
+#Auto-detect number of available CPUs and start that many worker processes
+pm2 start app.js -i max
+```
+
+Once running, a given application with the name app can be scaled like so:
+```
+#Add 3 more workers
+pm2 scale app +3
+#Scale to a specific number of workers
+pm2 scale app 2
+```
 
 ## Technologies used
 - Node.js

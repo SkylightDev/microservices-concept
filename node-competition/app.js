@@ -26,7 +26,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
-app.use('/notify', usersRouter);
+app.use('/notify', notifyRouter);
 
 app.get('/favicon.ico', (req, res) => res.status(204));
 // catch 404 and forward to error handler
