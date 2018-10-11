@@ -9,7 +9,7 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Node Users - microservice' });
 });
 
-/**
+    /**
     * @api {get} /health HealthCheck
     * @apiVersion 1.0.0
     * @apiName Create
