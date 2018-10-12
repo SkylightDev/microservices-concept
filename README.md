@@ -23,11 +23,14 @@ npm install pm2 -g
 - node-search
 - node-competition
 
-5. run each service with pm2
+5a. run each service with pm2
 - `pm2 start node-users/bin/www --name node-users -i max`
 - `pm2 start node-search/bin/www --name node-search -i max`
 - `pm2 start node-competition/bin/www --name node-competition -i max`
 
+5b. Alternatively, you may run the services manually using `npm start` on the root of each service.
+    In case of pm2 not being able to spawn the processes, use npm start to run the services one by one.
+    
 6.
 - Service node-users should be accessible on
 `http://localhost:3000`
