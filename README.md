@@ -72,7 +72,7 @@ When deploying the application with PM2, we can take advantage of clustering wit
 All microservices are scaled accross all CPUs available, without any code modifications using the node.js cluster module.
 Processes can be managed and monitored using PM2 (http://pm2.keymetrics.io)
 
-To enable cluster mode, start your application like so:
+To enable cluster mode, start your application like e.g.:
 ```
 #Start 4 worker processes
 pm2 start app.js -i 4
@@ -80,7 +80,7 @@ pm2 start app.js -i 4
 pm2 start app.js -i max
 ```
 
-Once running, a given application with the name app can be scaled like so:
+Once running, a given application with the name app can be scaled like e.g.:
 ```
 #Add 3 more workers
 pm2 scale app +3
