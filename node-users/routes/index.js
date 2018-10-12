@@ -12,10 +12,10 @@ router.get('/', function(req, res, next) {
     /**
     * @api {get} /health HealthCheck
     * @apiVersion 1.0.0
-    * @apiName Create
-    * @apiGroup Root /
+    * @apiName Health
+    * @apiGroup Index
     *
-    @apiExample {cUrl} Example usage:
+    * @apiExample {cUrl} Example usage:
     * curl -i http://localhost:3000/health
     *
     * @apiSuccess (Success 201) {String} UP

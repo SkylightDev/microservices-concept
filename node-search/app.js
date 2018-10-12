@@ -28,6 +28,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/notify', notifyRouter);
+app.use('/apidoc', express.static(__dirname + '/apidoc'));
 
 app.get('/favicon.ico', (req, res) => res.status(204));
 // catch 404 and forward to error handler

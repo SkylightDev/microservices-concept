@@ -42,7 +42,7 @@ npm install pm2 -g
 - Doc for node-search:
 `http://localhost:3001/apidoc`
 - Doc for node-competition:
-`http://localhost:3002`
+`http://localhost:3002/apidoc`
 
 8. To stop the services run
 - `pm2 stop node-users`
@@ -64,7 +64,9 @@ When deploying the application with PM2, we can take advantage of clustering wit
 - Using body-parser and express-validator to filter malicious input.
 - Using Request module to be able to notify the other microservices when a user has been added or modified.
 - These microservices do not implement any authentication. Ideally, any Rest Service microservice should also implement authentication, e.g. token based authentication (OAuth)
-- password field is excluded from all the listing endpoints
+- Excluded Password field from all the listing endpoints for security purposes.
+- The search with criteria endpoint currently works only with Match whole word, match case as the mock database module I used does not support regex.
+  I tested a few approaches and it might be a bug in the mongomock implementation. Using a live db environment, this endpoint will use regex to search the criteria
 
 ## Scalability
 All microservices are scaled accross all CPUs available, without any code modifications using the node.js cluster module.

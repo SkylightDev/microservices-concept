@@ -7,3 +7,45 @@
 {"message":"Service node-search notified that a new user was created","level":"info","timestamp":"2018-10-11T19:22:43.031Z"}
 {"nickname":"test123","firstName":"testtt","lastName":"test","country":"TEst","email":"test@test.com","level":"info","message":"","timestamp":"2018-10-11T19:22:43.034Z"}
 {"level":"info","message":"\u001b[0mPOST /notify/newUser \u001b[32m200 \u001b[0m26.446 ms - 183\u001b[0m\n","timestamp":"2018-10-11T19:22:43.041Z"}
+{"level":"error","message":"404 - Not Found - /apidoc - GET - ::1","timestamp":"2018-10-12T08:35:24.968Z"}
+{"level":"info","message":"\u001b[0mGET /apidoc \u001b[33m404 \u001b[0m416.457 ms - 1432\u001b[0m\n","timestamp":"2018-10-12T08:35:25.381Z"}
+{"level":"info","message":"\u001b[0mGET /stylesheets/style.css \u001b[32m200 \u001b[0m7.142 ms - 111\u001b[0m\n","timestamp":"2018-10-12T08:35:25.403Z"}
+{"level":"info","message":"\u001b[0mGET /apidoc \u001b[36m301 \u001b[0m8.078 ms - 179\u001b[0m\n","timestamp":"2018-10-12T08:35:55.352Z"}
+{"level":"info","message":"\u001b[0mGET /stylesheets/style.css \u001b[36m304 \u001b[0m14.376 ms - -\u001b[0m\n","timestamp":"2018-10-12T08:35:55.357Z"}
+{"level":"info","message":"\u001b[0mGET /apidoc/ \u001b[32m200 \u001b[0m5.616 ms - 27577\u001b[0m\n","timestamp":"2018-10-12T08:35:55.367Z"}
+{"level":"info","message":"\u001b[0mGET /apidoc/vendor/prettify.css \u001b[32m200 \u001b[0m2.827 ms - 1956\u001b[0m\n","timestamp":"2018-10-12T08:35:55.374Z"}
+{"level":"info","message":"\u001b[0mGET /apidoc/vendor/bootstrap.min.css \u001b[32m200 \u001b[0m4.614 ms - 121200\u001b[0m\n","timestamp":"2018-10-12T08:35:55.378Z"}
+{"level":"info","message":"\u001b[0mGET /apidoc/vendor/polyfill.js \u001b[32m200 \u001b[0m2.635 ms - 2900\u001b[0m\n","timestamp":"2018-10-12T08:35:55.380Z"}
+{"level":"info","message":"\u001b[0mGET /apidoc/vendor/require.min.js \u001b[32m200 \u001b[0m3.360 ms - 15825\u001b[0m\n","timestamp":"2018-10-12T08:35:55.381Z"}
+{"level":"info","message":"\u001b[0mGET /apidoc/css/style.css \u001b[32m200 \u001b[0m4.982 ms - 10418\u001b[0m\n","timestamp":"2018-10-12T08:35:55.382Z"}
+{"level":"info","message":"\u001b[0mGET /apidoc/main.js \u001b[32m200 \u001b[0m3.530 ms - 28722\u001b[0m\n","timestamp":"2018-10-12T08:35:55.412Z"}
+{"level":"info","message":"\u001b[0mGET /apidoc/img/favicon.ico \u001b[32m200 \u001b[0m0.713 ms - 894\u001b[0m\n","timestamp":"2018-10-12T08:35:55.418Z"}
+{"level":"info","message":"\u001b[0mGET /apidoc/locales/locale.js?v=1539333355414 \u001b[32m200 \u001b[0m10.199 ms - 1226\u001b[0m\n","timestamp":"2018-10-12T08:35:55.440Z"}
+{"level":"info","message":"\u001b[0mGET /apidoc/api_data.js?v=1539333355414 \u001b[32m200 \u001b[0m9.288 ms - 4038\u001b[0m\n","timestamp":"2018-10-12T08:35:55.441Z"}
+{"level":"info","message":"\u001b[0mGET /apidoc/utils/send_sample_request.js?v=1539333355414 \u001b[32m200 \u001b[0m7.422 ms - 6328\u001b[0m\n","timestamp":"2018-10-12T08:35:55.447Z"}
+{"level":"info","message":"\u001b[0mGET /apidoc/vendor/webfontloader.js?v=1539333355414 \u001b[32m200 \u001b[0m4.807 ms - 12492\u001b[0m\n","timestamp":"2018-10-12T08:35:55.452Z"}
+{"level":"info","message":"\u001b[0mGET /apidoc/vendor/semver.min.js?v=1539333355414 \u001b[32m200 \u001b[0m5.298 ms - 12950\u001b[0m\n","timestamp":"2018-10-12T08:35:55.453Z"}
+{"level":"info","message":"\u001b[0mGET /apidoc/vendor/path-to-regexp/index.js?v=1539333355414 \u001b[32m200 \u001b[0m4.624 ms - 5147\u001b[0m\n","timestamp":"2018-10-12T08:35:55.455Z"}
+{"level":"info","message":"\u001b[0mGET /apidoc/vendor/list.min.js?v=1539333355414 \u001b[32m200 \u001b[0m5.092 ms - 15952\u001b[0m\n","timestamp":"2018-10-12T08:35:55.459Z"}
+{"level":"info","message":"\u001b[0mGET /apidoc/vendor/prettify/prettify.js?v=1539333355414 \u001b[32m200 \u001b[0m5.595 ms - 15261\u001b[0m\n","timestamp":"2018-10-12T08:35:55.460Z"}
+{"level":"info","message":"\u001b[0mGET /apidoc/api_project.js?v=1539333355414 \u001b[32m200 \u001b[0m39.094 ms - 397\u001b[0m\n","timestamp":"2018-10-12T08:35:55.471Z"}
+{"level":"info","message":"\u001b[0mGET /apidoc/vendor/jquery.min.js?v=1539333355414 \u001b[32m200 \u001b[0m13.020 ms - 85630\u001b[0m\n","timestamp":"2018-10-12T08:35:55.472Z"}
+{"level":"info","message":"\u001b[0mGET /apidoc/vendor/lodash.custom.min.js?v=1539333355414 \u001b[32m200 \u001b[0m43.145 ms - 19579\u001b[0m\n","timestamp":"2018-10-12T08:35:55.473Z"}
+{"level":"info","message":"\u001b[0mGET /apidoc/locales/ca.js?v=1539333355414 \u001b[32m200 \u001b[0m13.107 ms - 1225\u001b[0m\n","timestamp":"2018-10-12T08:35:55.476Z"}
+{"level":"info","message":"\u001b[0mGET /apidoc/vendor/handlebars.min.js?v=1539333355414 \u001b[32m200 \u001b[0m6.062 ms - 72614\u001b[0m\n","timestamp":"2018-10-12T08:35:55.478Z"}
+{"level":"info","message":"\u001b[0mGET /apidoc/locales/de.js?v=1539333355414 \u001b[32m200 \u001b[0m15.454 ms - 1234\u001b[0m\n","timestamp":"2018-10-12T08:35:55.480Z"}
+{"level":"info","message":"\u001b[0mGET /apidoc/locales/fr.js?v=1539333355414 \u001b[32m200 \u001b[0m10.479 ms - 1264\u001b[0m\n","timestamp":"2018-10-12T08:35:55.486Z"}
+{"level":"info","message":"\u001b[0mGET /apidoc/locales/es.js?v=1539333355414 \u001b[32m200 \u001b[0m11.886 ms - 1244\u001b[0m\n","timestamp":"2018-10-12T08:35:55.487Z"}
+{"level":"info","message":"\u001b[0mGET /apidoc/locales/it.js?v=1539333355414 \u001b[32m200 \u001b[0m6.817 ms - 1249\u001b[0m\n","timestamp":"2018-10-12T08:35:55.489Z"}
+{"level":"info","message":"\u001b[0mGET /apidoc/locales/pt_br.js?v=1539333355414 \u001b[32m200 \u001b[0m7.038 ms - 1236\u001b[0m\n","timestamp":"2018-10-12T08:35:55.490Z"}
+{"level":"info","message":"\u001b[0mGET /apidoc/locales/nl.js?v=1539333355414 \u001b[32m200 \u001b[0m12.656 ms - 1241\u001b[0m\n","timestamp":"2018-10-12T08:35:55.495Z"}
+{"level":"info","message":"\u001b[0mGET /apidoc/locales/pl.js?v=1539333355414 \u001b[32m200 \u001b[0m13.441 ms - 1226\u001b[0m\n","timestamp":"2018-10-12T08:35:55.496Z"}
+{"level":"info","message":"\u001b[0mGET /apidoc/locales/ro.js?v=1539333355414 \u001b[32m200 \u001b[0m14.849 ms - 1238\u001b[0m\n","timestamp":"2018-10-12T08:35:55.505Z"}
+{"level":"info","message":"\u001b[0mGET /apidoc/locales/ru.js?v=1539333355414 \u001b[32m200 \u001b[0m15.415 ms - 1481\u001b[0m\n","timestamp":"2018-10-12T08:35:55.506Z"}
+{"level":"info","message":"\u001b[0mGET /apidoc/locales/tr.js?v=1539333355414 \u001b[32m200 \u001b[0m16.769 ms - 1246\u001b[0m\n","timestamp":"2018-10-12T08:35:55.509Z"}
+{"level":"info","message":"\u001b[0mGET /apidoc/locales/vi.js?v=1539333355414 \u001b[32m200 \u001b[0m18.418 ms - 1328\u001b[0m\n","timestamp":"2018-10-12T08:35:55.515Z"}
+{"level":"info","message":"\u001b[0mGET /apidoc/locales/zh.js?v=1539333355414 \u001b[32m200 \u001b[0m9.249 ms - 1163\u001b[0m\n","timestamp":"2018-10-12T08:35:55.517Z"}
+{"level":"info","message":"\u001b[0mGET /apidoc/locales/zh_cn.js?v=1539333355414 \u001b[32m200 \u001b[0m10.268 ms - 1186\u001b[0m\n","timestamp":"2018-10-12T08:35:55.519Z"}
+{"level":"info","message":"\u001b[0mGET /apidoc/utils/handlebars_helper.js?v=1539333355414 \u001b[32m200 \u001b[0m8.473 ms - 10277\u001b[0m\n","timestamp":"2018-10-12T08:35:55.520Z"}
+{"level":"info","message":"\u001b[0mGET /apidoc/vendor/bootstrap.min.js?v=1539333355414 \u001b[32m200 \u001b[0m14.023 ms - 37045\u001b[0m\n","timestamp":"2018-10-12T08:35:55.525Z"}
+{"level":"info","message":"\u001b[0mGET /apidoc/vendor/diff_match_patch.min.js?v=1539333355414 \u001b[32m200 \u001b[0m0.756 ms - 19192\u001b[0m\n","timestamp":"2018-10-12T08:35:55.528Z"}
