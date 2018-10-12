@@ -18,8 +18,8 @@ This proof of concept will make use of the node clustering module to take advant
 ```
 npm install pm2 -g
 ```
-4. Run `npm install` on each service
-- node-users
+4. Run `npm install` command on each node root folder
+- node-user
 - node-search
 - node-competition
 
@@ -44,7 +44,9 @@ npm install pm2 -g
 - Doc for node-competition:
 `http://localhost:3002/apidoc`
 
-8. To stop the services run
+8. To run unit tests, run the `npm test` command on the node-* root folder.
+
+9. To stop the services run
 - `pm2 stop node-users`
 - `pm2 stop node-search`
 - `pm2 stop node-competition`
@@ -53,7 +55,9 @@ npm install pm2 -g
 - `pm2 delete node-search`
 - `pm2 delete node-competition`
 
-
+## Unit Testing
+Used chai and mocha library to write unit tests.
+Running the `npm test` command will run some tests on the service
 
 ## Development decisions
 - Will use PM2 to make use of node clustering scalability and also for the application high availability.
@@ -105,3 +109,5 @@ pm2 scale app 2
 - express-validator - set of express.js middlewares that wraps validator.js validator and sanitizer functions.
 
 - request - Request is designed to be the simplest way possible to make http calls. It supports HTTPS and follows redirects by default.
+
+- mocha & chai - write unit tests

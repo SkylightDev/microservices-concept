@@ -74,6 +74,11 @@ router.get('/:id([a-zA-Z0-9_]+)', [check('id').isAlphanumeric().withMessage('id 
           result = users;
       })
 
+      if(!result.length>0)
+      {
+        winston.error("No user is found for the specified criteria")
+        return res.status(422).json("No user is found for the specified criteria");
+      }
 
       res.status(200).json(result);
 });

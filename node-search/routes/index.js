@@ -25,7 +25,7 @@ router.get('/', function(req, res, next) {
 *
 */
 router.get('/health', function (req, res, next) {
-    res.json({status: 'UP'});
+    res.status(201).json({status: 'UP'});
   });
 
 

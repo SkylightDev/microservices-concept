@@ -3,17 +3,20 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node ./bin/www",
+    "test": "mocha"
   },
   "dependencies": {
     "app-root-path": "^2.1.0",
     "body-parser": "^1.18.3",
+    "chai-http": "^4.2.0",
     "cookie-parser": "~1.4.3",
     "debug": "~2.6.9",
     "express": "~4.16.0",
     "express-validator": "^5.3.0",
     "http-errors": "~1.6.2",
     "jade": "~1.11.0",
+    "mocha": "^5.2.0",
     "mongomock": "^0.1.2",
     "morgan": "~1.9.0",
     "request": "^2.88.0",
