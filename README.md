@@ -30,7 +30,14 @@ npm install pm2 -g
 
 5b. Alternatively, you may run the services manually using `npm start` on the root of each service.
     In case of pm2 not being able to spawn the processes, use npm start to run the services one by one.
-    
+
+```
+    NOTE: In case of node error:
+    Block-scoped declarations not yet supported outside strict mode
+
+    Please update nodejs to the version mentioned in this README file
+```
+
 6.
 - Service node-users should be accessible on
 `http://localhost:3000`
